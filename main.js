@@ -8,10 +8,10 @@ function link(){
     if(document.getElementById('#audit').checked){
          per += 128;
     }
-     if(document.getElementById('#insight').checked){
+    if(document.getElementById('#insight').checked){
           per += 524288;
     }
-       if(document.getElementById('#server').checked){
+    if(document.getElementById('#server').checked){
            per += 32;
     }
     if(document.getElementById('#role').checked){
