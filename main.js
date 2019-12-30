@@ -93,6 +93,6 @@ var link = function(){
         per += 256;
     }
     link = 'https://discordapp.com/oauth2/authorize?client_id='+document.querySelector('#botid').value+'&permissions='+per+'&scope=bot';
-    document.querySelector('#link').innerHTML = link;
+    document.querySelector('#linkp').innerHTML = link;
     document.querySelector('#a').innerHTML = '아래 링크를 복사하거나 <a href = '+link+'>여기</a>를 클릭해 이동해주세요';
 };
