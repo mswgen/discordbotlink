@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset=UTF-8">
+        <meta charset="UTF-8">
         <title>Discord 봇 초대링크 생성기</title>
         <script src="main.js"></script>
         <style>
@@ -9,6 +9,7 @@
                 font-family: 'Malgun Gothic', sans-serif;
             }
         </style>
+        <script src="main.js"></script>
     </head>
     <body>
         <h1>디스코드 봇 초대링크 생성기</h1>
@@ -19,6 +20,69 @@
         <p>아래 채크박스로 권한을 선택해주세요</p>
         <input type="checkbox" id="admin">
         관리자
-
+        <input type="checkbox" id="audit">
+        감사 로그 보기
+        <input type="checkbox" id="insight">
+        서버 인사이트 보기
+        <input type="checkbox" id="server">
+        서버 관리하기
+        <input type="checkbox" id="role">
+        역할 관리하기
+        <input type="checkbox" id="channel">
+        채널 관리하기
+        <input type="checkbox" id="kick">
+        멤버 추방하기
+        <input type="checkbox" id="ban">
+        멤버 차단하기
+        <input type="checkbox" id="invite">
+        초대 코드 만들기
+        <input type="checkbox" id="nick">
+        별명 변경하기
+        <input type="checkbox" id="mnick">
+        별명 관리하기
+        <input type="checkbox" id="memoji">
+        이모지 관리하기
+        <input type="checkbox" id="webhook">
+        웹훅 관리하기
+        <input type="checkbox" id="view">
+        채널 보기
+        <input type="checkbox" id="send">
+        메세지 보내기
+        <input type="checkbox" id="tts">
+        TTS 메세지 보내기
+        <input type="checkbox" id="mmsg">
+        메세지 관리
+        <input type="checkbox" id="link">
+        외부 링크 작성하기
+        <input type="checkbox" id="file">
+        파일 첨부하기
+        <input type="checkbox" id="history">
+        메세지 기록 보기
+        <input type="checkbox" id="mention">
+        모두 멘션하기
+        <input type="checkbox" id="emoji">
+        외부 이모지 사용하기
+        <input type="checkbox" id="react">
+        반응 추가하기
+        <input type="checkbox" id="connect">
+        음성 연결
+        <input type="checkbox" id="speak">
+        말하기
+        <input type="checkbox" id="mmute">
+        멤버들의 마이크 음소거하기
+        <input type="checkbox" id="smute">
+        멤버들의 스피커 음소거하기
+        <input type="checkbox" id="move">
+        멤버 이동하기
+        <input type="checkbox" id="vact">
+        음성 감지 사용하기
+        <input type="checkbox" id="priority">
+        우선 발언권
+        <input type="button" value="확인" onclick='
+            link();
+        '>
+        <h2>3. 링크 복사하기</h2>
+        <span class='a'>아래 링크를 복사하거나 여기를 클릭해 이동해주세요</span>
+        <p id='link'>링크를 생성해주세요</p>
     </body>
 </html>
