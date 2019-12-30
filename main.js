@@ -1,6 +1,6 @@
 var per = 0;
 var link = 0;
-function link(){
+var link = function(){
     per = 0;
     if(document.getElementById('#admin').checked){
          per += 8;
@@ -95,4 +95,4 @@ function link(){
     link = 'https://discordapp.com/oauth2/authorize?client_id='+document.getElementById('#botid').value+'&permissions='+per+'&scope=bot';
     document.getElementById('#link').innerHTML = link;
     document.getElementById('#a').innerHTML = '아래 링크를 복사하거나 <a href = '+link+'>여기</a>를 클릭해 이동해주세요';
-}
+};
