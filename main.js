@@ -2,97 +2,97 @@ var per = 0;
 var link = 0;
 var link = function(){
     per = 0;
-    if(document.getElementById('#admin').checked){
+    if(document.querySelector('#admin').checked){
          per += 8;
      }
-    if(document.getElementById('#audit').checked){
+    if(document.querySelector('#audit').checked){
          per += 128;
     }
-    if(document.getElementById('#insight').checked){
+    if(document.querySelector('#insight').checked){
           per += 524288;
     }
-    if(document.getElementById('#server').checked){
+    if(document.querySelector('#server').checked){
            per += 32;
     }
-    if(document.getElementById('#role').checked){
+    if(document.querySelector('#role').checked){
        per += 268435456;
     }
-    if(document.getElementById('#channel').checked){
+    if(document.querySelector('#channel').checked){
            per += 16;
     }
-    if(document.getElementById('#kick').checked){
+    if(document.querySelector('#kick').checked){
         per += 2;
     }
-    if(document.getElementById('#ban').checked){
+    if(document.querySelector('#ban').checked){
         per += 4;
     }
-    if(document.getElementById('#invite').checked){
+    if(document.querySelector('#invite').checked){
         per += 1;
     }
-    if(document.getElementById('#nick').checked){
+    if(document.querySelector('#nick').checked){
         per += 67108864;
     }
-    if(document.getElementById('#mnick').checked){
+    if(document.querySelector('#mnick').checked){
         per += 134217728;
     }
-    if(document.getElementById('#memoji').checked){
+    if(document.querySelector('#memoji').checked){
         per += 1073741824;
     }
-    if(document.getElementById('#webhook').checked){
+    if(document.querySelector('#webhook').checked){
         per += 536870912;
     }
-    if(document.getElementById('#view').checked){
+    if(document.querySelector('#view').checked){
         per += 1024;
     }
-    if(document.getElementById('#send').checked){
+    if(document.querySelector('#send').checked){
         per += 2048;
     }
-    if(document.getElementById('#tts').checked){
+    if(document.querySelector('#tts').checked){
         per += 4096;
     }
-    if(document.getElementById('#mmsg').checked){
+    if(document.querySelector('#mmsg').checked){
         per += 8192;
     }
-    if(document.getElementById('#link').checked){
+    if(document.querySelector('#link').checked){
         per += 16384;
     }
-    if(document.getElementById('#file').checked){
+    if(document.querySelector('#file').checked){
         per += 32768;
     }
-    if(document.getElementById('#history').checked){
+    if(document.querySelector('#history').checked){
         per += 65536;
     }
-    if(document.getElementById('#mention').checked){
+    if(document.querySelector('#mention').checked){
         per += 131072;
     }
-    if(document.getElementById('#emoji').checked){
+    if(document.querySelector('#emoji').checked){
         per += 262144;
     }
-    if(document.getElementById('#react').checked){
+    if(document.querySelector('#react').checked){
         per += 64;
     }
-    if(document.getElementById('#connect').checked){
+    if(document.querySelector('#connect').checked){
         per += 1048576;
     }
-    if(document.getElementById('#speak').checked){
+    if(document.querySelector('#speak').checked){
         per += 2097152;
     }
-    if(document.getElementById('#mmute').checked){
+    if(document.querySelector('#mmute').checked){
         per += 4194304;
     }
-    if(document.getElementById('#smute').checked){
+    if(document.querySelector('#smute').checked){
         per += 8388608;
     }
-    if(document.getElementById('#move').checked){
+    if(document.querySelector('#move').checked){
         per += 16777216;
     }
-    if(document.getElementById('#vact').checked){
+    if(document.querySelector('#vact').checked){
         per += 33554432;
     }
-    if(document.getElementById('#priority').checked){
+    if(document.querySelector('#priority').checked){
         per += 256;
     }
-    link = 'https://discordapp.com/oauth2/authorize?client_id='+document.getElementById('#botid').value+'&permissions='+per+'&scope=bot';
-    document.getElementById('#link').innerHTML = link;
-    document.getElementById('#a').innerHTML = '아래 링크를 복사하거나 <a href = '+link+'>여기</a>를 클릭해 이동해주세요';
+    link = 'https://discordapp.com/oauth2/authorize?client_id='+document.querySelector('#botid').value+'&permissions='+per+'&scope=bot';
+    document.querySelector('#link').innerHTML = link;
+    document.querySelector('#a').innerHTML = '아래 링크를 복사하거나 <a href = '+link+'>여기</a>를 클릭해 이동해주세요';
 };
